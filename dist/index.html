@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amita&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONTAWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- LEAFLETJS STYLESHEET-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- ICON -->
+    <link rel="icon" href="leaf.svg" />
+    <!--
+      Icon made by Pixel perfect (https://www.flaticon.com/authors/pixel-perfect) from https://www.flaticon.com/
+      -->
+
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Respira</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="leaf.svg" alt="" />
+      <h1 class="logo">Respira</h1>
+    </header>
+    <section>
+      <h2 class="description">
+        Verifica il livello di inquinamento della tua città.
+      </h2>
+
+      <form class="search">
+        <input class="searchedCity" type="text" placeholder="Cerca" />
+        <button type="submit" class="submit-button">
+          <i class="fas fa-search"></i>
+        </button>
+
+        <button type="submit" class="location-button">
+          <i class="fas fa-map-marker-alt"></i>
+          <p class="pop">Usa la mia posizione</p>
+        </button>
+      </form>
+    </section>
+
+    <main>
+      <!-- Displayed information-->
+      <div class="container"></div>
+
+      <!-- MAP -->
+      <div id="map"></div>
+    </main>
+
+    <!-- LEAFLETSJS SCRIPT -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <!-- SCRIPT -->
+    <script src="main.js"></script>
+  </body>
+</html>
