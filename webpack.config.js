@@ -7,5 +7,9 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
   },
-  plugins: [new Dotenv()],
+  plugins: [
+    new Dotenv({
+      systemvars: true,
+    }),
+  ],
 };
