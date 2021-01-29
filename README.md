@@ -1,5 +1,5 @@
 # RESPIRA
-Questo progetto è stato realizzato per la superguida JavaScript Advanced di Start 2 Impact 
+Questo progetto è stato realizzato per la superguida JavaScript Advanced di Start 2 Impact. 
 Link al sito: https://respira.netlify.app/
 
 ## Start 2 Impact
